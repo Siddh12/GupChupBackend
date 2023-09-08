@@ -186,10 +186,11 @@ class UserController {
   // get user Details
 
   static getUserDetails = async (req, res) => {
-    console.log(`line no 182 ${req.body}`);
+    console.log(`line no 182 ${req.params.id}`);
     var id = "64e2170b44b14e9521fccac3"
-    const UserDetail = await User.findById(req.body.id).exec();
+    const UserDetail = await User.findById(req.params.id).exec();
     res.status(202).json(UserDetail)
+    console.log(UserDetail);
   }
 
 }
