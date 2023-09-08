@@ -39,6 +39,10 @@ const transporter = nodemailer.createTransport({
     }
 });
 class UserController {
+    static homepage = async function(req, res){
+      res.send("Gup-Chup")
+    }
+
     // send OTP 
 
     static emailvarification = async function (req, res) {
@@ -114,14 +118,14 @@ class UserController {
                 <meta charset="utf-8">
               </head>
               <body>
-              <div style="font-family: Helvetica,Arial,sans-serif;min-width:1000px;overflow:auto;  line-height:2">
+              <div style="font-family: Helvetica,Arial,sans-serif;min-width:1000px;overflow:auto; line-height:2">
               <div style="margin:50px auto;width:70%;padding:20px 0">
                 <div style="border-bottom:1px solid #eee">
                   <h3 style="font-size:1.4em;color: #00466a;text-decoration:none;font-weight:600">Gup-Chup</h3>
                 </div>
                 <p style="font-size:1.1em">Hi,</p>
                 <p>Thank you for choosing Gup-Chup. Use the following OTP to login . OTP is valid for 5 minutes</p>
-                <h2 style="background: #00466a;margin: 0 auto;width: max-content;padding: 0 10px;color: #fff;border-radius: 4px;">324457</h2>
+                <h2 style="background: #00466a;margin: 0 auto;width: max-content;padding: 0 10px;color: #fff;border-radius: 4px;">${otp}</h2>
                 <p style="font-size:0.9em;">Regards,</p>
                 <p style="font-size:0.5em;">Gup-Chup</p>
                 <hr style="border:none;border-top:1px solid #eee" />

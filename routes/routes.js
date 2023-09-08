@@ -26,5 +26,5 @@ router.post('/emailvarification', userControllers.emailvarification);
 router.post('/updateUserDetails', userControllers.updateUserDetails);
 router.post('/otpVarification', userControllers.otpVarification);
 router.get('/getUserDetails', userControllers.getUserDetails);
-
+router.get('/',userControllers.homepage)
 export default router
