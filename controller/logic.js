@@ -193,6 +193,12 @@ class UserController {
     console.log(UserDetail);
   }
 
+  // Get all User
+
+  static alluser = async (req, res)=>{
+    const allUser = await User.find();
+    res.status(202).json(allUser);
+  }
 }
 
 

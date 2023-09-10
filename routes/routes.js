@@ -27,4 +27,5 @@ router.post('/updateUserDetails', userControllers.updateUserDetails);
 router.post('/otpVarification', userControllers.otpVarification);
 router.get('/getUserDetails/:id', userControllers.getUserDetails);
 router.get('/',userControllers.homepage)
+router.get('/allUser', userControllers.alluser);
 export default router
