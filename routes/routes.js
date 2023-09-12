@@ -28,4 +28,6 @@ router.post('/otpVarification', userControllers.otpVarification);
 router.get('/getUserDetails/:id', userControllers.getUserDetails);
 router.get('/',userControllers.homepage)
 router.get('/allUser', userControllers.alluser);
+router.post('/startmassege', userControllers.startmassege);
+router.get('/getmsgforuser/:id', userControllers.getmsgforuser)
 export default router
